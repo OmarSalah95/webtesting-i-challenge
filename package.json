@@ -1,0 +1,25 @@
+{
+"name": "webtesting-i-guided",
+  "version": "1.0.0",
+  "description": "Web Testing I Guided Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarSalah95/webtesting-i-challenge"
+  },
+  "keywords": [
+    "lambda",
+    "testing"
+  ],
+  "author": "Omar Salah",
+  "bugs": {
+    "url": "https://github.com/OmarSalah95/webtesting-i-challenge/issues"
+  },
+  "homepage": "https://github.com/OmarSalah95/webtesting-i-challenge#readme",
+  "dependencies": {
+    "jest": "^24.7.1"
+  }
+}

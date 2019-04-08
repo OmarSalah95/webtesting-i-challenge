@@ -6,21 +6,23 @@ module.exports = {
 };
 
 function succeed(item) {
-  let {enhancement, durability} = item
- 
+  item.enhancement < 20
+    ? item.enhancement += 1
+    : null
   return { ...item };
 }
 
 function fail(item) {
+  let {enhancement, durability} = item
   enhancement < 15
-  ? durability -= 5
-  : enhancement > 14
-  ? durability -= 10
-  : enhancement > 16
-  ? enhancement -= 1
-  : null
-item.durability = durability
-item.enhancement = enhancement
+    ? durability -= 5
+      : enhancement > 15
+      ? (enhancement -= 1,  durability -= 10)
+      : enhancement > 14
+      ? durability -= 10
+    : null
+  item.durability = durability
+  item.enhancement = enhancement
   return { ...item };
 }
 

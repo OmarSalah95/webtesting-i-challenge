@@ -97,13 +97,13 @@ describe('Game tests', () => {
 
         it('Enhancement above 16 failure reduces durability by 10, and enhancement by 1', () => {
             expect(enhancer.fail(
-                {   name:"Adam", 
+                {   name:"Omar", 
                     enhancement: 17, 
                     durability: 100
                 }
             ))
                 .toEqual(
-                    {   name:"Adam", 
+                    {   name:"Omar", 
                         enhancement: 16, 
                         durability: 90
                     }

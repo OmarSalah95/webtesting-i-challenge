@@ -17,7 +17,7 @@ function fail(item) {
   enhancement < 15
     ? durability -= 5
       : enhancement > 15
-      ? (enhancement -= 1,  durability -= 10)
+      ? (enhancement --,  durability -= 10)
       : enhancement > 14
       ? durability -= 10
     : null
